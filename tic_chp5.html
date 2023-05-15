@@ -1,0 +1,151 @@
+<style>
+  body {
+    background-color: #15618e;
+  }
+  
+  div {
+    background-color: #d4eaf7;
+    border: double;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+</style>
+
+<div>
+<h3> Participantes:</h3>
+<ul>
+<li> Bechafi Yasmine - 222231484310 </li>
+<li> Kacimi Yasmine - 222231501215 </li>
+</ul>
+<h3> Chapitre traité:</h3>
+<ul>
+<li>Chapitre 5: Système de Gestion de Version</li>
+</ul>
+</div>
+ <div>
+<h2>1/Introduction</h2>
+  <p>Git est un logiciel de versioning créé en 2005 par Linus Torvalds. 
+  Les logiciels de gestion de versions permettent de conserver un historique
+  des modifications effectuées sur un projet pour faciliter la gestion de projets et 
+  travailler en équipe plus efficacement. Git est le leader incontesté des logiciels de 
+  gestion de versions et il est indispensable pour tout développeur de savoir l'utiliser.</p>
+   </div>
+    <div>
+   <h2>A quoi sert concrètement un système de gestion de version ?</h2>
+   <p>2/Un système de gestion de version sert à suivre les modifications apportées à un ensemble
+   de fichiers au fil du temps, enregistrant chaque modification et permettant aux utilisateurs 
+   de récupérer des versions antérieures si nécessaire. Cela permet aux équipes de travailler sur 
+   les mêmes fichiers sans risque de conflits ou d'écrasement des modifications. Les systèmes de 
+   gestion de version sont également utiles pour la collaboration, la documentation et l'audit des 
+   changements apportés aux fichiers. Ils sont couramment utilisés dans le développement logiciel,
+   mais peuvent être appliqués à tout type de projet impliquant des fichiers modifiables.
+</p>
+ </div>
+ <div>
+   <h2>3/ Les deux modèles des logiciels de gestion de version :
+modèle centralisé vs modèle décentralisé</h2>
+   <p> Le modèle centralisé implique que le code source est hébergé sur un serveur distant, 
+   tandis que dans le modèle décentralisé, chaque utilisateur télécharge et héberge
+   l'intégralité du code source sur sa propre machine. Le modèle décentralisé est populaire
+   grâce à Git et offre des avantages tels que la simplicité et la flexibilité du travail 
+   ainsi que la sécurité en utilisant la copie du projet d'un utilisateur comme back-up en
+   cas de corruption du serveur central</p>
+    </div>
+     <div>
+   <h2> 4/Qu’est-ce que GitHub ? </h2>
+  <p> Git est  un logiciel de gestion de version permettant d'enregistrer les modifications
+   effectuées sur un projet et de revenir à une version antérieure. Il explique également
+   que GitHub est un service en ligne qui héberge des dépôts Git, ce qui en fait le plus
+   grand hébergeur de dépôts Git au monde. Les dépôts hébergés sur GitHub sont souvent publics, 
+   ce qui permet à n'importe qui de télécharger le code et de contribuer au développement du projet.
+   En résumé, Git est un logiciel de gestion de version tandis que GitHub est un service en ligne d'hébergement 
+   de dépôts Git qui sert de serveur central pour ces dépôts.</p>
+    </div>
+     <div>
+  <h2> 5/Utiliser Git : ligne de commande, console et interface
+graphique</h2>
+   <p> il est possible d'utiliser différents types d'interfaces pour installer et utiliser Git, mais que dans ce cours,
+   la console en ligne de commande sera utilisée. Cette décision a été prise car cela permet d'avoir accès à toutes les 
+   commandes Git, que tout le monde pourra suivre le cours de la même façon et que savoir utiliser la version en ligne de
+   commande permettra également de savoir utiliser n'importe quelle autre interface graphique. </p>
+    </div>
+   <div> 
+     <h2>6/ Paramétrage de Git</h2>
+    <p>pour  paramétrer Git en renseignant un nom d'utilisateur et une adresse mail  et pour éviter de les fournir à nouveau 
+  plus tard :La commande git.config permet de modifier les variables de configuration et l'option --global permet d'indiquer
+  que ces informations doivent être utilisées globalement pour tous les projets Git. Les commandes à taper sont git config --global user.name "votre nom"
+  et git config --global user.email "votre adresse mail". Pour vérifier que les informations ont bien été enregistrées, il suffit de taper git config user.name 
+  et git config user.emai</p>
+   </div>
+   <div>
+  <h2>7/ Démarrer un dépôt Git</h2>
+   <p>Un dépôt Git est une copie complète et importée de tous les fichiers d'un projet. Il existe deux façons de créer un dépôt Git : l'importation d'un répertoire existant dans Git ou le clonage d'un dépôt Git existant. Avant d'aborder ces méthodes, il est important de comprendre comment Git gère
+   les informations et son fonctionnement général.</p>
+  </div>
+
+<div>
+<h2>8/ La gestion des informations selon Git :</h2>
+<p>Le statut d'un fichier dans Git dépend de son état de suivi, d'indexation et de validation. Un fichier est considéré comme suivi s'il appartient  
+au dernier instantané capturé par Git et enregistré en base. Les fichiers non suivis sont ceux qui n'appartiennent pas au dernier instantané et qui
+ n'ont pas été indexés. Lorsqu'on démarre un dépôt Git, les fichiers sont tous non suivis et doivent être indexés et validés. Les fichiers suivis
+ peuvent être modifiés, indexés ou validés. Un fichier est considéré comme modifié tant qu'il n'a pas été indexé. On indexe un fichier pour l'inclure
+ dans le prochain instantané dans sa version actuelle. Lorsqu'on demande à Git de prendre l'instantané, les fichiers faisant partie de l'instantané sont 
+ à nouveau considérés comme validés et le cycle peut recommencer.</p>
+ </div>
+ <div>
+<h2>9/Les états des fichiers</h2>
+<p>Git gère les données d'un projet sous forme d'instantanés ou "snapshots". Chaque fois qu'un état est enregistré dans Git, il prend un instantané du
+ contenu de l'espace de travail et enregistre une référence à cet instantané. Chaque instantané est stocké dans une base de données locale, ce qui permet 
+ de réaliser la plupart des opérations localement sans avoir besoin d'être connecté à un serveur central distant. Cette approche rend les opérations plus 
+ rapides et le travail plus agréable.</p>
+ </div>
+ <div>
+<h2>10/ Les zones de travail</h2>
+<p>Le résumé de ce texte est que Git utilise des zones de travail pour gérer les états de fichiers. Un projet Git est composé de trois sections :
+ le répertoire de travail, la zone d'index et le répertoire Git. Le répertoire de travail correspond à une extraction unique d'une version du projet,
+ la zone d'index stocke les informations sur ce qui fera partie du prochain instantané ou commit, et le répertoire Git stocke les méta-données et la
+ base de données des objets du projet. Le processus de travail consiste à travailler sur les fichiers dans le répertoire de travail, indexer les fichiers
+ modifiés ou créés, valider la version indexée pour l'ajouter au répertoire Git.</p>
+ </div>
+ <div>
+<h2>11/ Créer un dépôt Git à partir d’un répertoire existant</h2>
+<p>Le texte explique comment créer un dépôt Git à partir d'un répertoire existant. Il est souvent nécessaire d'implémenter un système de gestion de version
+ pour des projets déjà stockés localement sur notre machine ou sur un serveur distant. Pour cela, il est possible d'importer l'ensemble des ressources d'un
+ projet dans Git. L'auteur crée un répertoire nommé "projet-git" qui contient deux fichiers texte vides et utilise la commande "git init" pour initialiser 
+ le dépôt Git. Cette commande crée un sous-répertoire .git qui contient les fichiers nécessaires au fonctionnement du dépôt Git.Le texte explique comment
+ créer un dépôt Git à partir d'un répertoire existant. Il est souvent nécessaire d'implémenter un système de gestion de version pour des projets déjà stockés
+ localement sur notre machine ou sur un serveur distant. Pour cela, il est possible d'importer l'ensemble des ressources d'un projet dans Git. L'auteur crée un
+ répertoire nommé "projet-git" qui contient deux fichiers texte vides et utilise la commande "git init" pour initialiser le dépôt Git. Cette commande crée un
+ sous-répertoire .git qui contient les fichiers nécessaires au fonctionnement du dépôt Git.</p>
+ </div>
+ <div>
+<h2>12/ Cloner un dépôt Git</h2>
+<p>La deuxième façon de démarrer un dépôt Git est de cloner localement un dépôt Git déjà
+existant. Pour cela, on va utiliser la commande Git clone.
+Créez un repo sur GitHub:</p>
+<h2>13/ Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git</h2>
+<p>Dans ce chapitre, nous apprenons comment ajouter ou modifier des fichiers dans notre projet et actualiser notre dépôt Git. Nous devons utiliser les commandes 
+git add et git commit pour enregistrer les modifications de fichiers ou l'ajout de fichiers dans le dépôt Git. Il est important de noter que le commit d'un fichier 
+se basera sur l'état du fichier au moment du git add. Si nous modifio     </div>
+<div>
+<h2>14) Consulter l’historique des modifications Git</h2>
+<p>Le résumé de cette section est que pour consulter l'historique des modifications Git, la commande la plus simple à utiliser est "git log". Cette commande affiche 
+une liste des commits effectués, du plus récent au plus ancien, avec des informations telles que la somme de contrôle SHA-1, le nom et l'e-mail de l'auteur, la date 
+et le message du commit.</p>
+</div>
+<div>
+<h2>15/ Annuler des modifications apportées à un fichier</h2>
+<p>Le logiciel de gestion de version permet de revenir à un état antérieur enregistré d'un projet, appelé "roll back". Après avoir effectué des modifications sur un
+ fichier et les avoir enregistrées, il est possible de vouloir annuler certaines d'entre elles si elles ne produisent pas les résultats escomptés. Pour cela, on peut 
+ utiliser la commande git checkout -- nom-du-fichier ou la nouvelle commande spécialisée git restore. Ces commandes permettent de revenir à l'état du fichier du dernier
+ instantané Git enregistré.</p>
+ </div>
+ <div>
+<h2>16/ Qu’est ce qu’une branche ?</h2>
+<p>Le texte explique que Git a une approche différente des branches, qui sont simplement des pointeurs vers un commit. La branche par défaut s'appelle "master" et se déplace
+ automatiquement à chaque nouveau commit. Une nouvelle branche crée simplement un nouveau pointeur plutôt que de recopier l'intégralité.</p>
+ </div>

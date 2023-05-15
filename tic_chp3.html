@@ -1,0 +1,85 @@
+<style>
+  body {
+    background-color: #15618e;
+  }
+  
+  div {
+    background-color: #d4eaf7;
+    border: double;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+</style>
+
+<div>
+<h3> Participantes:</h3>
+<ul>
+<li>Chouik Yacine, 222231404412</li>
+<li>Ariba Mehdi, 222231602705</li>
+</ul>
+<h3> Chapitre traité:</h3>
+<ul>
+<li>Chapitre 3: Le modèle OSI</li>
+</ul>
+</div>
+
+    <div><h1>Les Composants matériel d’un Réseau informatique:</h1>
+
+    <h2>Les cartes réseau :</h2>
+    <p>Les cartes réseau sont des composants matériels essentiels pour la connectivité d'un ordinateur à un réseau. Elles permettent la transmission et la réception de données via des protocoles de communication tels que TCP/IP, utilisés pour le transfert de données sur Internet. Ces cartes, également appelées cartes d'interface réseau (NIC), sont installées à l'intérieur de l'ordinateur et se connectent généralement à une prise Ethernet ou Wi-Fi. Elles jouent un rôle clé dans la communication entre les ordinateurs d'un réseau, facilitant ainsi le partage d'informations et la collaboration.</p></div>
+
+    <div><h2>SWITCH :</h2>
+    <p>Un switch est un composant matériel essentiel pour les réseaux locaux (LAN). Il permet la connexion de plusieurs appareils, comme des ordinateurs, des imprimantes ou des serveurs, et facilite leur communication en utilisant des adresses MAC (Media Access Control). Lorsqu'un appareil se connecte au switch, celui-ci enregistre son adresse MAC dans une table de correspondance. Ainsi, lorsque des données doivent être transmises d'un appareil à un autre sur le réseau, le switch utilise cette table pour acheminer les données uniquement vers l'appareil destinataire, évitant ainsi une diffusion à l'ensemble du réseau. Les switches sont disponibles en différentes tailles, adaptées aux réseaux domestiques, aux petits bureaux ou aux réseaux d'entreprise plus importants. Ils peuvent également offrir des fonctionnalités avancées telles que la gestion des VLAN, la qualité de service (QoS) ou la gestion du trafic.</p></div>
+
+    <div><h2>HUB :</h2>
+    <p>Un hub est un composant matériel utilisé pour connecter plusieurs appareils sur un réseau local (LAN). Il fonctionne comme un répéteur, en recevant les données envoyées par un appareil et en les transmettant à tous les autres appareils connectés. Contrairement à un switch, qui envoie les données uniquement à l'appareil destinataire, un hub diffuse les données à tous les appareils connectés, même si le destinataire est différent. Les hubs ont été largement remplacés par des switches plus efficaces pour la gestion du trafic réseau et offrant une communication plus rapide et sécurisée entre les appareils connectés. Cependant, dans certaines situations spécifiques ou pour de petits réseaux, un hub peut encore être utilisé comme une solution simple et économique.</p></div>
+
+    <div><h1>Le Modèle OSI :</h1>
+
+    <h2>OSI (Open Systems Interconnection) :</h2>
+    <p>Le modèle OSI est un modèle de référence pour les communications réseau. Il est composé de sept couches distinctes, chacune ayant des fonctions spécifiques. Les couches incluent la couche physique, la couche liaison de données, la couche réseau, la couche transport, la couche session, la couche présentation et la couche application. Ce modèle est utilisé pour concevoir et mettre en œuvre des réseaux informatiques.</p></div>
+<div><h1>Le Modèle TCP/IP:</h1>
+<p>Le modèle TCP/IP (Transmission Control Protocol/Internet Protocol)
+modèle de référence pour les communications de réseau,
+,qui est utilisé pour la conception et la mise en
+œuvre des réseaux informatiques les plus largement utilisés et encore
+les réseaux d'entreprise,Internet et sans fil ,
+le modèle TCP/IP divise les communications en
+4 couches:La couche liaison de données,la couche réseau,la couche transport,la couche application .</p></div>
+<div><h1>L’adressage:</h1>
+<p>Les communications dans un réseau obéissent à des règles : Adressage,architecture,et protocoles.<br>
+C’est quoi un adressage IP (Internet Protocol) :C'est le numéro qui identifie chaque ordinateur dans les réseaux
+qu’il appartient.<br> Il y’a deux mode d’adressage IPV4 et IPV6 :</div>
+<div><h2>ADRESSE IPV4:</h2>
+<p>Chaque paquet contient : adresse source et destinataire, les deux sur (32bits).<br>
+IPV 4 == 4 octets ==32 bits,on exprime ces bits en 4 chiffres (chaque 8 bits représente un chiffre) en décimale
+séparé par un point.</p></div>
+<div><h2>ADRESSE IPV6:</h2>
+<p>Les adresses sont codées sur 128 bits. <br>
+La représentation textuelle se fait en le découpant en 8 mots de 16 bits séparés par le caractère «:», chacun d'eux est en hexadécimal.</p></div>
+<div><h1>L’adresse IPV4 :</h1>
+<p>Les 4 octets composent deux parties: Partie réseau et partie hôtes :<br>
+Une première partie des bits de valeur supérieur : Adresse réseau.<br>
+Une deuxième parties des bits : Adresse hôte.<br>
+• si la valeur des bits pour la partie réseau est la
+même, On reconnait que se réseau est un {hôte}.<br>
+• Le nombre des bits contenus dans la partie hôtes détermine le nombre des machines
+possible sur ce réseau.<br>
+Les différents types d’adresse IPV4:<br>
+l’adressage IPV4 s’effectué selon les types suivants:</p></div>
+<div><h2>L’adresse réseau:</h2>
+<p>tous les bits de la partie hôtes=0
+donc tous les machines de ce réseau ont la même partie réseau.</p></div>
+<div><h2>L’adresse de diffusion:</h2>
+<p>c'est une adresse dans laquelle tous les bits de partie hôtes=1,
+pour le réseau 10.0.0.0 l’adresse de diffusion = 10.255.255.255.<br>elle permette à un
+pc d’envoyer des paquets à l’adresse de diffusion de réseau, et tous les hôtes de cette
+adresse reçoivent ces données.</p></div>
+ <div><h2>L’adresse hôtes:</h2> <p>On donne les machines situé sur cette réseau les valeurs
+situés entre l’adresse réseau et l’adresse de diffusion .</p></div>
+<div><h2>Le masque de réseau et de sous réseaux:</h2><p>Tous les bits de la partie réseaux = 1 .</p></div>
+</html>
